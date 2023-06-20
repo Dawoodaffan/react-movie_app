@@ -45,11 +45,11 @@ const App = () => {
             searchMovies(e.target.value);
           }}
         />
-        <img
+        {/* <img
           src={searchIcon}
           alt="search"
           onClick={() => searchMovies(searchTerm)}
-        />
+        /> */}
       </div>
       {movies?.length > 0 ? (
         <div className="container">
