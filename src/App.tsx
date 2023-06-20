@@ -21,7 +21,6 @@ const App = () => {
     const repsonse = await fetch(`${API_URL}&s=${title}`);
     const data = await repsonse.json();
     setMovies(data.Search);
-    console.log(data.Search);
   };
   useEffect(() => {
     searchMovies(searchTerm);
